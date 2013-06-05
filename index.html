@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+title: Just Begin
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Just Begin by Robert-Qiu</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Just Begin</h1>
-        <h2>Hello World</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/Robert-Qiu" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="the-title-likes-the-haskell-maybe-type-if-not-just-begin-it-is-nothing" class="anchor" href="#the-title-likes-the-haskell-maybe-type-if-not-just-begin-it-is-nothing"><span class="octicon octicon-link"></span></a>The title likes the Haskell Maybe type. If not Just Begin, it is Nothing.</h1>
-
-<h1>
-<a name="will-it-be-the-begin" class="anchor" href="#will-it-be-the-begin"><span class="octicon octicon-link"></span></a>Will it be the Begin?</h1>
-      </section>
-    </div>
-
-    
-  </body>
-</html>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
