@@ -1,0 +1,11 @@
+.container-narrow
+{
+	max-width: 700px;
+	margin-right: auto;
+  	margin-left: auto;
+  	*zoom: 1;
+}
+
+.container-narrow hr {
+    margin: 30px 0;
+}
